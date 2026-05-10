@@ -1,0 +1,22 @@
+:root {
+    --color-primary: #29221D;
+    --color-secondary: #1E1611;
+
+    --color-background: #1E1B19;
+
+    --color-brown: #473B33;
+    --color-red: #FD0000;
+    --color-red-light: #FE1E00;
+    --color-orange: #FE6C00;
+    --color-orange-light: #FFC397;
+    --color-yellow: #FEC80A;
+    --color-green: #00FE93;
+    --color-light: #ffffff;
+    --color-gray-100: #8A8587;
+    --color-gray-60: #BDBABB;
+
+    --font-family-main: 'bai-jamjuree';
+    --font-weight-regular: 400;
+
+    --border-radius-10: 0.948rem;
+}
