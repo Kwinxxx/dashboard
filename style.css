@@ -1,0 +1,67 @@
+@import url('./variables.css');
+
+@font-face {
+    font-family: var(--font-family-main);
+    src: url('./assets/fonts/BaiJamjuree-Bold.ttf');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: var(--font-family-main);
+    src: url('./assets/fonts/BaiJamjuree-SemiBold.ttf');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: var(--font-family-main);
+    src: url('./assets/fonts/BaiJamjuree-Medium.ttf');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: var(--font-family-main);
+    src: url('./assets/fonts/BaiJamjuree-Regular.ttf');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: var(--font-family-main);
+    src: url('./assets/fonts/BaiJamjuree-Light.ttf');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 300;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background);
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-main);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-light);
+}
+
+a,li, button {
+    text-decoration: none;
+    color: inherit;
+    list-style-type: none;
+    cursor: pointer;
+}

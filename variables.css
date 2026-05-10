@@ -15,8 +15,9 @@
     --color-gray-100: #8A8587;
     --color-gray-60: #BDBABB;
 
-    --font-family-main: 'bai-jamjuree';
+    --font-family-main: 'Bai Jamjuree', sans-serif;
     --font-weight-regular: 400;
 
     --border-radius-10: 0.948rem;
+    --border-radius-11: 1.137rem;
 }
