@@ -1,14 +1,283 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./style.css">
-    <title>Dashboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>ui-dashboard</title>
 </head>
 <body>
+  <main>
+    <section class="dashboard" aria-label="Finance dashboard">
+      <div class="dashboard__shadow"></div>
+      <div class="dashboard__inner">
+        <div class="sidebar">
+          <div class="profile">
+            <div class="profile__avatar"></div>
+            <span class="profile__name">Soibi-Bobo</span>
+          </div>
 
+          <nav aria-label="Dashboard navigation">
+            <ul class="sidebar__list">
+              <li class="sidebar__item sidebar__item--active">
+                <span class="sidebar__icon sidebar__icon--home"></span>
+                <span class="sidebar__text">Home</span>
+              </li>
+              <li class="sidebar__item">
+                <span class="sidebar__icon sidebar__icon--budget"></span>
+                <span class="sidebar__text">Budget</span>
+              </li>
+              <li class="sidebar__item">
+                <span class="sidebar__icon sidebar__icon--transactions"></span>
+                <span class="sidebar__text">Transactions</span>
+              </li>
+              <li class="sidebar__item">
+                <span class="sidebar__icon sidebar__icon--subscriptions"></span>
+                <span class="sidebar__text">Subscriptions</span>
+              </li>
+              <li class="sidebar__item">
+                <span class="sidebar__icon sidebar__icon--loans"></span>
+                <span class="sidebar__text">Loans</span>
+              </li>
+              <li class="sidebar__item">
+                <span class="sidebar__icon sidebar__icon--reports"></span>
+                <span class="sidebar__text">Reports</span>
+              </li>
+              <li class="sidebar__item">
+                <span class="sidebar__icon sidebar__icon--savings"></span>
+                <span class="sidebar__text">Savings</span>
+              </li>
+              <li class="sidebar__item">
+                <span class="sidebar__icon sidebar__icon--advice"></span>
+                <span class="sidebar__text">Financial advice</span>
+              </li>
+              <li class="sidebar__item">
+                <span class="sidebar__icon sidebar__icon--account"></span>
+                <span class="sidebar__text">Account</span>
+              </li>
+              <li class="sidebar__item">
+                <span class="sidebar__icon sidebar__icon--settings"></span>
+                <span class="sidebar__text">Settings</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="dashboard__content">
+          <header class="topbar">
+            <div class="topbar__title">Home</div>
+            <div class="topbar__actions">
+              <button class="topbar__button topbar__button--search" type="button" aria-label="Search"></button>
+              <button class="topbar__button topbar__button--bell" type="button" aria-label="Notifications">
+                <span class="topbar__badge"></span>
+              </button>
+            </div>
+          </header>
+
+          <div class="dashboard__grid">
+            <section class="card">
+              <div class="card__header">
+                <div class="card__title">Cards</div>
+                <button class="card__plus" type="button" aria-label="Add card"></button>
+              </div>
+              <div class="payment-card">
+                <span class="payment-card__label">Balance</span>
+                <span class="payment-card__balance">N 22,000</span>
+                <div class="payment-card__footer">
+                  <div class="payment-card__info">
+                    <div class="payment-card__number">**** **** **** <span>1234</span></div>
+                    <span class="payment-card__caption">Expires</span>
+                    <span class="payment-card__date">12/22</span>
+                  </div>
+                  <div class="payment-card__mastercard" aria-label="Mastercard logo"></div>
+                </div>
+              </div>
+            </section>
+
+            <section class="card transactions">
+              <div class="card__header">
+                <div class="card__title">All Transactions</div>
+                <button class="card__plus" type="button" aria-label="Add transaction"></button>
+              </div>
+              <ul class="transactions__list">
+                <li class="transactions__item">
+                  <span class="transactions__avatar transactions__avatar--gerald"></span>
+                  <span class="transactions__person">Gerald Argungu</span>
+                  <span class="transactions__date">21/12/21</span>
+                  <span class="transactions__price transactions__price--out">₦ 22,000</span>
+                </li>
+                <li class="transactions__item">
+                  <span class="transactions__avatar transactions__avatar--tahav"></span>
+                  <span class="transactions__person">Tahav Vihikwagh</span>
+                  <span class="transactions__date">21/12/21</span>
+                  <span class="transactions__price transactions__price--out">₦ 34,000</span>
+                </li>
+                <li class="transactions__item">
+                  <span class="transactions__avatar transactions__avatar--frank"></span>
+                  <span class="transactions__person">Frank Jones</span>
+                  <span class="transactions__date">21/12/21</span>
+                  <span class="transactions__price transactions__price--in">₦ 52,000</span>
+                </li>
+              </ul>
+            </section>
+
+            <section class="card report">
+              <div class="card__header">
+                <div class="card__title">Report</div>
+                <button class="card__plus" type="button" aria-label="Add report"></button>
+              </div>
+              <div class="chart">
+                <ul class="chart__scale" aria-hidden="true">
+                  <li>100</li>
+                  <li>75</li>
+                  <li>50</li>
+                  <li>25</li>
+                  <li>0</li>
+                </ul>
+                <ul class="chart__bars">
+                  <li class="chart__item">
+                    <span class="chart__bar"><span class="chart__bar-inner chart__bar-inner--jan"></span></span>
+                    <span class="chart__month">Jan</span>
+                  </li>
+                  <li class="chart__item">
+                    <span class="chart__bar">
+                      <span class="chart__bar-inner chart__bar-inner--feb-light"></span>
+                      <span class="chart__bar-inner chart__bar-inner--feb"></span>
+                    </span>
+                    <span class="chart__month">Feb</span>
+                  </li>
+                  <li class="chart__item">
+                    <span class="chart__bar"><span class="chart__bar-inner chart__bar-inner--mar"></span></span>
+                    <span class="chart__month">Mar</span>
+                  </li>
+                  <li class="chart__item">
+                    <span class="chart__bar"><span class="chart__bar-inner chart__bar-inner--apr"></span></span>
+                    <span class="chart__month">Apr</span>
+                  </li>
+                  <li class="chart__item">
+                    <span class="chart__bar"><span class="chart__bar-inner chart__bar-inner--may"></span></span>
+                    <span class="chart__month">May</span>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="card budget">
+              <div class="card__header">
+                <div class="card__title">Budget</div>
+                <button class="card__plus" type="button" aria-label="Add budget"></button>
+              </div>
+              <div class="budget__summary">
+                <span class="budget__label">Cash</span>
+                <span class="budget__cash">₦ 100,000</span>
+              </div>
+              <ul class="budget__list">
+                <li class="budget__item">
+                  <span class="budget__checkbox budget__checkbox--checked"></span>
+                  <span class="budget__name">Subscriptions</span>
+                  <span class="budget__mode">Automated</span>
+                  <span class="budget__price">₦ 22,000</span>
+                </li>
+                <li class="budget__item">
+                  <span class="budget__checkbox budget__checkbox--checked"></span>
+                  <span class="budget__name">Loan Payment</span>
+                  <span class="budget__mode">Automated</span>
+                  <span class="budget__price">₦ 20,000</span>
+                </li>
+                <li class="budget__item">
+                  <span class="budget__checkbox budget__checkbox--checked"></span>
+                  <span class="budget__name">Foodstuff</span>
+                  <span class="budget__price">₦ 10,000</span>
+                </li>
+                <li class="budget__item">
+                  <span class="budget__checkbox"></span>
+                  <span class="budget__name budget__name--muted">Savings</span>
+                  <span class="budget__price">₦ 2,000</span>
+                </li>
+                <li class="budget__item">
+                  <span class="budget__checkbox"></span>
+                  <span class="budget__name budget__name--muted">Fuel</span>
+                  <span class="budget__price">₦ 12,000</span>
+                </li>
+              </ul>
+            </section>
+
+            <section class="card subscriptions">
+              <div class="card__header">
+                <div class="card__title">Subscriptions</div>
+                <button class="card__plus" type="button" aria-label="Add subscription"></button>
+              </div>
+              <ul class="subscriptions__list">
+                <li class="subscriptions__item">
+                  <span class="subscriptions__mark"></span>
+                  <span class="subscriptions__name">LinkedIn</span>
+                  <span class="subscriptions__due">due 21/12/21</span>
+                  <span class="subscriptions__price">₦ 20,000</span>
+                </li>
+                <li class="subscriptions__item">
+                  <span class="subscriptions__mark"></span>
+                  <span class="subscriptions__name">Netflix</span>
+                  <span class="subscriptions__due">due 21/12/21</span>
+                  <span class="subscriptions__price">₦ 5,000</span>
+                </li>
+                <li class="subscriptions__item">
+                  <span class="subscriptions__mark"></span>
+                  <span class="subscriptions__name">DSTV</span>
+                  <span class="subscriptions__due">due 21/12/21</span>
+                  <span class="subscriptions__price">₦ 2,000</span>
+                </li>
+              </ul>
+            </section>
+
+            <section class="card savings">
+              <div class="card__header">
+                <div class="card__title">Savings</div>
+                <button class="card__plus" type="button" aria-label="Add savings"></button>
+              </div>
+              <div class="savings__content">
+                <div class="savings__progress">
+                  <span>50%</span>
+                </div>
+                <div class="savings__details">
+                  <div class="savings__detail">
+                    <span class="savings__detail-label">Savings Target</span><br>
+                    <span class="savings__detail-value">N 500,000</span>
+                  </div>
+                  <div class="savings__detail">
+                    <span class="savings__detail-label">Target Reached</span><br>
+                    <span class="savings__detail-value">N 250,000</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="card loans">
+              <div class="card__header">
+                <div class="card__title">Loans</div>
+                <button class="card__plus" type="button" aria-label="Add loan"></button>
+              </div>
+              <div class="loans__row">
+                <span class="loans__avatar"></span>
+                <span class="loans__name">Pay kid bro's fees</span>
+                <span class="loans__price">₦ 250,000</span>
+              </div>
+              <div class="loans__meta">
+                <span>Date taken 21/12/21</span>
+                <span>Amount left ₦40,000</span>
+              </div>
+              <div class="loans__progress">
+                <span></span>
+              </div>
+            </section>
+
+            <section class="card advice">
+              <div class="card__title advice__title">Financial Advice</div>
+              <p class="advice__text">Try dey enjoy life. Problem no dey finish. For this life lol....</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

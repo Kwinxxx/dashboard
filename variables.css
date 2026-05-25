@@ -3,6 +3,7 @@
     --color-secondary: #1E1611;
 
     --color-background: #1E1B19;
+    --color-dashboard: transparent;
 
     --color-brown: #473B33;
     --color-red: #FD0000;
@@ -13,11 +14,9 @@
     --color-green: #00FE93;
     --color-light: #ffffff;
     --color-gray-100: #8A8587;
-    --color-gray-60: #BDBABB;
+    --color-gray-60: #A8A5A6;
+    --color-gray-30: #BDBABB;
 
     --font-family-main: 'Bai Jamjuree', sans-serif;
     --font-weight-regular: 400;
-
-    --border-radius-10: 0.948rem;
-    --border-radius-11: 1.137rem;
 }
