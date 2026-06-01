@@ -118,7 +118,6 @@ main {
 .profile__avatar {
   width: 4.8rem;
   height: 4.8rem;
-  background-image: url('./assets/images/profile.jpg');
 }
 
 .profile__name {
@@ -183,15 +182,12 @@ main {
 }
 
 .sidebar__icon--transactions {
-  background-image: url('./assets/icons/transactions.svg');
 }
 
 .sidebar__icon--subscriptions {
-  background-image: url('./assets/icons/subscriptions.svg');
 }
 
 .sidebar__icon--loans {
-  background-image: url('./assets/icons/loans.svg');
 }
 
 .sidebar__icon--reports {
@@ -444,18 +440,6 @@ main {
   height: 4.2rem;
 }
 
-.transactions__avatar--gerald,
-.loans__avatar {
-  background-image: url('./assets/images/gerald.jpg');
-}
-
-.transactions__avatar--tahav {
-  background-image: url('./assets/images/tahav.jpg');
-}
-
-.transactions__avatar--frank {
-  background-image: url('./assets/images/frank.jpg');
-}
 
 .transactions__person,
 .transactions__date,
